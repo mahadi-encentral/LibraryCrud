@@ -10,7 +10,7 @@ public class GeneralMenu {
         int choice = 0;
         int L = menus.length;
 
-        for(int i = 0; i < L; i++)
+        for (int i = 0; i < L; i++)
             System.out.printf("%3d. %s%n", (i+1), menus[i]);
 
         while (choice < 1 || choice > L) {

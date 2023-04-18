@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a57aa6d9-4fcd-4de2-9e34-29bb5f79c402" name="Changes" comment="Initial Set up">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/BookDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/GeneralMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/BookDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/BookDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/GeneralMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/GeneralMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

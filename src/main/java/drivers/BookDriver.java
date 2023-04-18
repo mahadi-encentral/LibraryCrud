@@ -76,6 +76,7 @@ public class BookDriver {
         else{
             System.out.println("Book not found");
         }
+        in.nextLine();
         return book;
     }
 
