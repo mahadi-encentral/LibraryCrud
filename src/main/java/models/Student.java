@@ -47,6 +47,11 @@ public class Student {
         this.level = level;
     }
 
+    public void updateStudent(Student student){
+        name = student.getName();
+        level = student.getLevel();
+    }
+
     @Override
     public String toString() {
         return "Student{" +

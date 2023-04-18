@@ -8,14 +8,14 @@
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:h2:~/test"/>
+                      value="jdbc:h2:~/esl_test_db"/>
 
             <property name="jakarta.persistence.jdbc.user" value="esl"/>
             <property name="jakarta.persistence.jdbc.password" value=""/>
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
-<!--            <property name="hibernate.show_sql" value="true"/>-->
-<!--            <property name="hibernate.format_sql" value="true"/>-->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
 <!--                        <property name="hibernate.hbm2ddl.auto" value="create"/>-->
         </properties>
     </persistence-unit>
