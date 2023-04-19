@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a57aa6d9-4fcd-4de2-9e34-29bb5f79c402" name="Changes" comment="Setting up Borrowing Logic">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/BorrowingsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drivers/BorrowingDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/StudentAlreadyBorrowedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/repositories/BorrowingsRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/drivers/BookDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drivers/BookDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Borrowings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Borrowings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repositories/BookRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repositories/BookRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/BorrowingsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/BorrowingsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -74,9 +76,22 @@
       <recent name="repositories" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BookDriver">
+  <component name="RunManager" selected="JUnit.BorrowingsRepositoryTest">
     <configuration name="BookDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="drivers.BookDriver" />
+      <module name="LibraryCrud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="drivers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowingDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="drivers.BorrowingDriver" />
       <module name="LibraryCrud" />
       <extension name="coverage">
         <pattern>
@@ -101,8 +116,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BorrowingsRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryCrud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repositories" />
+      <option name="MAIN_CLASS_NAME" value="repositories.BorrowingsRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowingsRepositoryTest.borrowBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryCrud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repositories" />
+      <option name="MAIN_CLASS_NAME" value="repositories.BorrowingsRepositoryTest" />
+      <option name="METHOD_NAME" value="borrowBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BorrowingsRepositoryTest" />
+        <item itemvalue="JUnit.BorrowingsRepositoryTest.borrowBook" />
+        <item itemvalue="Application.BorrowingDriver" />
         <item itemvalue="Application.BookDriver" />
         <item itemvalue="Application.StudentDriver" />
       </list>
@@ -145,7 +194,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681858431061</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Setting up Borrowing Logic">
+      <created>1681933834203</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681933834203</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Setting up Borrowing Logic">
+      <created>1681933913484</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681933913484</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Setting up Borrowing Logic">
+      <created>1681934008587</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681934008587</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -3,10 +3,10 @@ package models;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 
-
 @Entity
 @Table(name = "borrowings")
-//@NamedQueries({
+@NamedQueries({
+        @NamedQuery(name = "findAllBorrowings", query = "SELECT br FROM Borrowings br"),
 //        @NamedQuery(
 //                name = "getStudentBorrowings",
 //                query = "SELECT b FROM Borrowings br LEFT JOIN Book b WHERE br.studentId = :id"
@@ -15,7 +15,7 @@ import java.time.LocalDate;
 //                name = "findBookBorrowers",
 //                query = "Select br FROM Borrowings br WHERE br.bookId = :id"
 //        )
-//})
+})
 public class Borrowings {
 
     @Id

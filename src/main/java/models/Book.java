@@ -22,7 +22,6 @@ public class Book {
     public Book() {
     }
 
-    @NaturalId
     @Column(name = "isbn")
     @GeneratedValue
     @UuidGenerator(style = UuidGenerator.Style.RANDOM)
