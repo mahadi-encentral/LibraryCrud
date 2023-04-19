@@ -3,6 +3,7 @@ package models;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.NaturalId;
+import org.hibernate.annotations.UuidGenerator;
 
 @Entity
 @Table(name = "books")
@@ -23,6 +24,8 @@ public class Book {
 
     @NaturalId
     @Column(name = "isbn")
+    @GeneratedValue
+    @UuidGenerator(style = UuidGenerator.Style.RANDOM)
     private String isbn;
 
     @Column(name = "author", nullable = false)
@@ -31,9 +34,8 @@ public class Book {
     @Column(name = "published_date")
     private String datePublished;
 
-    public Book(String title, String isbn, String author, String datePublished) {
+    public Book(String title, String author, String datePublished) {
         this.title = title;
-        this.isbn = isbn;
         this.author = author;
         this.datePublished = datePublished;
     }
@@ -52,10 +54,6 @@ public class Book {
 
     public String getIsbn() {
         return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
     }
 
     public String getAuthor() {

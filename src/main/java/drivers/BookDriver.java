@@ -18,8 +18,6 @@ public class BookDriver {
         int choice = 0;
         while (choice != bookMenus.length){
             choice = showMenu(bookMenus, in);
-
-
             switch (choice){
                 case 1:
                     listBooks();
@@ -51,19 +49,18 @@ public class BookDriver {
     }
 
     static void addBook(){
-        System.out.print("Enter Book's title: ");
-        String title = in.nextLine();
+        Book book = new Book();
 
-        System.out.print("Enter Book's ISBN: ");
-        String isbn = in.nextLine();
+        System.out.print("Enter Book's title: ");
+        book.setTitle(in.nextLine());
 
         System.out.print("Enter Book's Author: ");
-        String author = in.nextLine();
+        book.setAuthor(in.nextLine());
 
         System.out.print("Enter Book's publishing date: ");
-        String publishedDate = in.nextLine();
+        book.setDatePublished(in.nextLine());
 
-        bookRepository.createBook(new Book(title, isbn, author, publishedDate));
+        bookRepository.createBook(book);
         System.out.println("Book Added Successfully");
 
     }
@@ -89,10 +86,6 @@ public class BookDriver {
         System.out.print("Title (Enter to Skip): ");
         temp = in.nextLine();
         if(!temp.strip().equals("")) book.setTitle(temp);
-
-        System.out.print("ISBN (Enter to Skip): ");
-        temp = in.nextLine();
-        if(!temp.strip().equals("")) book.setIsbn(temp);
 
         System.out.print("Author (Enter to Skip): ");
         temp = in.nextLine();
